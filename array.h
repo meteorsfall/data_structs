@@ -22,10 +22,13 @@ public:
         }
         this->data = new T[capacity];
     }
+    ~LouiseArray() {
+        delete[] this->data;
+    }
     void set(int index, T value) {
         this->data[index] = value;
     }
-    T get(int index) {
+    T& get(int index) {
         return this->data[index];  
     }
     void push(T value) {
