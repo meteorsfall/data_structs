@@ -5,6 +5,7 @@
 #include "djikstra.h"
 #include "prim.h"
 #include "search.h"
+#include "sort.h"
 #include "knapsack.h"
 #include "deque.h"
 #include "segment_tree.h"
@@ -139,12 +140,13 @@ int main() {
     cout << endl;
     vector<int> test_arr(1'0'000);
     quicksort<int>(test_arr); */
+    /*
     srand(1);
     for(int i = 0; i < 100'000'000; i++) {
-        arc.push_back(rand());
+        arc.push_back(0);
     }
     auto before = chrono::high_resolution_clock::now();
-    mergesort(arc);
+    quicksort(arc);
     auto after = chrono::high_resolution_clock::now();
     cout << "Time: " << (chrono::duration_cast<chrono::microseconds>(after - before).count() / 1'000'000.0) << endl;
     for (int i = 1; i < arc.size(); i++) {
@@ -153,5 +155,6 @@ int main() {
             break;
         }
         //cout << arc[i] << " ";
-    }
+    } */
+
 }  
