@@ -9,6 +9,7 @@
 #include "knapsack.h"
 #include "deque.h"
 #include "segment_tree.h"
+#include "algos.h"
 #include <iostream>
 #include <vector>
 #include <tuple>
@@ -157,4 +158,5 @@ int main() {
         //cout << arc[i] << " ";
     } */
 
+    cout << GCD(10'000'000'000, 2) << endl;
 }  
